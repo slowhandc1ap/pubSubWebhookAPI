@@ -1,6 +1,6 @@
 import Fastify, { fastify } from 'fastify';
 import ReceiveRoute from './routes/recerver/receive.route';
-import { Server as IOServer } from 'socket.io';
+
 const app = Fastify();
 
 

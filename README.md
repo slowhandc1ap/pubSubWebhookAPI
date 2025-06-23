@@ -92,7 +92,7 @@ API/
 1. **ติดตั้ง Dependencies และเริ่ม Docker**:
    ```bash
    npm install
-   docker-compose up -d  # ตรวจสอบว่า Docker พร้อมใช้งาน
+ 
    ```
 
 2. **สร้างไฟล์ `.env` (ตัวอย่าง)**:
@@ -106,18 +106,23 @@ API/
    REDIS_HOST=localhost
    REDIS_PORT=6379
    ```
+3. **ติดตั้ง เริ่ม Docker**:
+   ```bash
+   
+   docker-compose up -d  # ตรวจสอบว่า Docker พร้อมใช้งาน
+   ```
 
-3. **สร้าง Schema ฐานข้อมูลเริ่มต้น**:
+4. **สร้าง Schema ฐานข้อมูลเริ่มต้น**:
    ```bash
    npm run init-db  # รันสคริปต์จาก package.json: "ts-node src/db/init-db.ts"
    ```
 
-4. **เริ่ม Backend Server**:
+5. **เริ่ม Backend Server**:
    ```bash
    npm run dev
    ```
 
-5. **เริ่ม Webhook Receiver Server**:
+6. **เริ่ม Webhook Receiver Server**:
    ```bash
    npm run dev:webhook
    ```
